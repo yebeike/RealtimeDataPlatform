@@ -3,8 +3,11 @@ const authRoute = require('./auth.route');
 const userRoute = require('./user.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
+const testRoute = require('./test.route');
 
 const router = express.Router();
+
+router.use('/test', testRoute);
 
 const defaultRoutes = [
   {
