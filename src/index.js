@@ -3,7 +3,7 @@ const app = require('./app');
 const config = require('./config/config');
 const logger = require('./config/logger');
 const cache = require('./utils/cache');
-const { QueueManager } = require('./utils/queue'); // 引入队列管理器
+const { QueueManager } = require('./utils/queue/queue'); // 引入队列管理器
 
 let server;
 
